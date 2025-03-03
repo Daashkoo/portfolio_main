@@ -61,8 +61,5 @@
     --color-dark: #0b0713;       /* Deep Dark Purple */
   }
   
-  /* Footer Custom Style (as an example) */
-  footer {
-    background-color: var(--color-dark);
-  }
+
   
