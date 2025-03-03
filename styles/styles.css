@@ -14,23 +14,6 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Navbar Styles */
-  header {
-    background-color: var(--color-primary);
-  }
-  
-  header nav a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: inline-block;
-  }
-  
-  header nav a:hover {
-    color: var(--color-yellow);
-  }
-  
   /* Hover and Active States */
   a:hover {
     color: var(--color-yellow);
@@ -71,14 +54,6 @@
   
   button:hover, .btn:hover {
     background-color: var(--color-secondary);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: var(--color-dark);
-    color: var(--color-white);
-    padding: 20px 0;
-    text-align: center;
   }
   
   /* Container for Content */

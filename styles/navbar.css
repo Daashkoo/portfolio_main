@@ -1,0 +1,107 @@
+/* Navbar styling */
+header {
+    background-color: #ffae03;
+    color: #0b0713;
+    padding: 2rem;  /* Increased padding for a bigger navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* General link styling */
+  .nav-link {
+    text-decoration: none;
+    color: #0b0713;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;  /* Add padding to make them look like buttons */
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;  /* Add background color transition */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Hover effect for all links (main nav links) */
+  .nav-link:hover {
+    color: #a22522;  /* Change text color */
+    background-color: rgba(162, 37, 34, 0.1);  /* Light red background */
+    transform: translateY(-2px);  /* Lift effect */
+  }
+  
+  /* Ensure "Works" is aligned like other links */
+  .works-link {
+    color: #0b0713;  /* Set initial color */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem; /* Same padding as the other links */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;  /* Ensures it aligns with other links */
+    text-decoration: none;  /* Remove underline */
+  }
+  
+  /* Hover effect for "Works" link */
+  .works-link:hover {
+    color: #a22522;  /* Change text color on hover */
+    background-color: rgba(162, 37, 34, 0.1);  /* Light red background */
+    transform: translateY(-2px);  /* Lift effect */
+  }
+  
+  /* Dropdown Menu styling */
+  .relative {
+    position: relative;
+  }
+  
+  .group:hover .group-hover {
+    display: block;
+  }
+  
+  .group-hover\:block {
+    width: 130px; /* Increase this width to make it wider */
+    display: none;
+  }
+  
+  .group:hover .group-hover\:block {
+    display: block;
+  }
+  
+  /* Dropdown Links Styling */
+  .group-hover\:block a {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #0b0713;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    #navbar-links {
+      display: none;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #ffae03;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    #navbar-links.open {
+      display: flex;
+    }
+  
+    #hamburger.open span:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 8px;
+    }
+  
+    #hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 8px;
+    }
+  }
+  
