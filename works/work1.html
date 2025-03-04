@@ -3,44 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 1 - Your Name</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Project 1 - Daria Shtefanesa</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
   <link href="../styles/styles.css" rel="stylesheet">
+  <link href="../styles/tailwind.css" rel="stylesheet">
   <link href="../styles/footer.css" rel="stylesheet">
+  <link href="../styles/navbar.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
 
-  <header class="bg-[#ffae03] text-white p-6"> <!-- Changed bg-blue-600 to bg-[#ffae03] -->
-    <nav class="container mx-auto flex justify-between items-center">
-        <!-- Logo or Home Link -->
-        <a href="../index.html" class="text-3xl font-bold hover:text-gray-300">Your Name</a>
+   <!-- Header Section -->
+ <header class="bg-[#ffae03] text-[#0b0713] p-8 shadow-lg sticky top-0 z-50">
+  <nav class="container mx-auto flex justify-between items-center">
+    <!-- Logo or Home Link -->
+    <a href="../index.html" class="flex items-center space-x-2">
+      <img src="../assets/images/logo.png" alt="Logo" class="w-16 h-16 rounded-full object-cover">
+      <span class="text-4xl font-bold hover:text-[#a22522] transition duration-300">Daria Shtefanesa</span>
+    </a>
 
-  
-      <!-- Navbar Links -->
-      <div class="space-x-6">
-        <a href="../index.html" class="hover:text-gray-300">Home</a>
-        <a href="../Pages/about.html" class="hover:text-gray-300">About</a>
-        
-        <!-- Work Pages Links -->
-        <a href="../works/work1.html" class="hover:text-gray-300">Work 1</a>
-        <a href="../works/work2.html" class="hover:text-gray-300">Work 2</a>
-        <a href="../works/work3.html" class="hover:text-gray-300">Work 3</a>
-        <a href="../works/work4.html" class="hover:text-gray-300">Work 4</a>
-        <a href="../works/work5.html" class="hover:text-gray-300">Work 5</a>
-        <a href="../works/work6.html" class="hover:text-gray-300">Work 6</a>
-        <a href="../works/work7.html" class="hover:text-gray-300">Work 7</a>
-        <a href="../works/work8.html" class="hover:text-gray-300">Work 8</a>
-        <a href="../works/work9.html" class="hover:text-gray-300">Work 9</a>
-        <a href="../works/work10.html" class="hover:text-gray-300">Work 10</a>
-        <a href="../Pages/resume.html" class="hover:text-gray-300">Resume</a>
-        <a href="../Pages/contact.html" class="hover:text-gray-300">Contact</a>
+    <!-- Hamburger Menu Icon for Mobile -->
+    <div class="block lg:hidden">
+      <button id="hamburger" class="text-[#0b0713] focus:outline-none">
+        <span class="block w-6 h-0.5 bg-[#0b0713] mb-1"></span>
+        <span class="block w-6 h-0.5 bg-[#0b0713] mb-1"></span>
+        <span class="block w-6 h-0.5 bg-[#0b0713]"></span>
+      </button>
+    </div>
+
+    <!-- Navbar Links (hidden on small screens) -->
+    <div class="lg:flex space-x-6 hidden" id="navbar-links">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../Pages/about.html" class="nav-link">About</a>
+
+      <!-- Works Dropdown Menu -->
+      <div class="relative group">
+        <a href="javascript:void(0)" class="nav-link works-link">Works</a><!-- Changed to an anchor tag for uniformity -->
+      
+      <!-- Dropdown Menu -->
+      <div class="absolute hidden group-hover:block bg-[#ffae03] text-[#0b0713] p-4 shadow-lg rounded-lg mt-2">
+        <a href="../works/work1.html" class="block hover:text-[#a22522] mb-2">Work 1</a>
+        <a href="../works/work2.html" class="block hover:text-[#a22522] mb-2">Work 2</a>
+        <a href="../works/work3.html" class="block hover:text-[#a22522] mb-2">Work 3</a>
+        <a href="../works/work4.html" class="block hover:text-[#a22522] mb-2">Work 4</a>
+        <a href="../works/work5.html" class="block hover:text-[#a22522] mb-2">Work 5</a>
+        <a href="../works/work6.html" class="block hover:text-[#a22522] mb-2">Work 6</a>
+        <a href="../works/work7.html" class="block hover:text-[#a22522] mb-2">Work 7</a>
+        <a href="../works/work8.html" class="block hover:text-[#a22522] mb-2">Work 8</a>
+        <a href="../works/work9.html" class="block hover:text-[#a22522] mb-2">Work 9</a>
+        <a href="../works/work10.html" class="block hover:text-[#a22522] mb-2">Work 10</a>
       </div>
-    </nav>
-  </header>
+    </div>
+
+    <a href="../Pages/resume.html" class="nav-link">Resume</a>
+    <a href="../Pages/contact.html" class="nav-link">Contact</a>
+  </div>
+</nav>
+</header>
+
 
   <!-- Project Details Section -->
   <section class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center mb-8">Project 1: [Project Name]</h1>
+    <h1 class="text-4xl font-bold text-center mb-8">Project 1: Essential Oils E-Commerce Website</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -48,7 +71,8 @@
       </div>
       <div>
         <h2 class="text-2xl font-bold mb-4">Overview</h2>
-        <p class="text-lg mb-4">This project is a [brief project description]. It was developed using [technologies/tools used], and it solves [problem]. The main goal was to [primary objective of the project].</p>
+        <p class="text-lg mb-4">This project is an E-commerce website developed to sell essential oils online, offering a user-friendly interface for browsing, purchasing, and learning about various essential oils. The website focuses on product descriptions, customer reviews, and easy navigation to create a seamless shopping experience. It includes features like a discount offer for new customers, integration with a shopping cart, and a newsletter subscription for ongoing engagement.
+          The goal was to develop an interactive and visually appealing website that caters to health-conscious consumers interested in essential oils and their benefits..</p>
         
         <h3 class="text-xl font-semibold mt-8">Technologies Used</h3>
         <ul class="list-disc pl-6">
@@ -62,9 +86,10 @@
         
         <h3 class="text-xl font-semibold mt-8">Key Features</h3>
         <ul class="list-disc pl-6">
-          <li>Feature 1: [Description of feature]</li>
-          <li>Feature 2: [Description of feature]</li>
-          <li>Feature 3: [Description of feature]</li>
+          <li>Product Listings: Displaying various essential oils with detailed descriptions, prices, and images, allowing users to easily explore products.</li>
+          <li>Customer Reviews: Users can leave reviews on each product to boost trust and reliability.</li>
+          <li>Responsive Design: The website is mobile-friendly, ensuring it works seamlessly across all devices.</li>
+          <li>Visual Design: Clean layout with a minimalist approach and consistent branding to ensure ease of use and a pleasant user experience.</li>
         </ul>
         
         <a href="https://github.com/yourusername/project1" target="_blank" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-full">View on GitHub</a>
@@ -95,7 +120,7 @@
         </div>
         <div class="footer-phone">
           <i class="fas fa-phone-alt"></i>
-          <p>(123) 456-7890</p>
+          <p>(717) 681-3161</p>
         </div>
         <div class="footer-email">
           <i class="fas fa-envelope"></i>
@@ -109,6 +134,6 @@
     </div>
   </footer>
 
-  <script src="/assets/scripts/main.js"></script>
+  <script src="../styles/main.js"></script>
 </body>
 </html>

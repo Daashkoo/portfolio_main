@@ -1,4 +1,4 @@
-/* Base Colors */
+/* ----------------------- Base Colors ----------------------*/
 :root {
     --color-primary: #c33149;    /* Rich Red */
     --color-secondary: #a22522;  /* Dark Red */
@@ -7,7 +7,7 @@
     --color-dark: #0b0713;       /* Deep Dark Purple */
   }
   
-  /* General Body */
+  /* -------------------- General Body -----------------------*/
   body {
     background-color: var(--color-white);
     color: var(--color-dark);
