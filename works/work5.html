@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 5 - Daria Shtefanesa</title>
+  <link href="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.js"></script>
+
   <script src="https://cdn.tailwindcss.com"></script> 
   <link href="../styles/styles.css" rel="stylesheet">
   <link href="../styles/tailwind.css" rel="stylesheet">
@@ -61,37 +64,59 @@
 
   <!-- Project Details Section -->
   <section class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center mb-8">Project 5: Daria Shtefanesa</h1>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <img src="/assets/images/work3-screenshot.jpg" alt="Project 3 Screenshot" class="w-full rounded-lg mb-4">
-      </div>
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Overview</h2>
-        <p class="text-lg mb-4">This project is a [brief project description]. It was developed using [technologies/tools used], and it solves [problem]. The main goal was to [primary objective of the project].</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Technologies Used</h3>
-        <ul class="list-disc pl-6">
-          <li>HTML, CSS, JavaScript</li>
-          <li>Angular, Firebase</li>
-          <li>GraphQL</li>
-        </ul>
-        
-        <h3 class="text-xl font-semibold mt-8">Challenges</h3>
-        <p class="mb-4">A key challenge was [describe a challenge]. I overcame this by [describe solution].</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Key Features</h3>
-        <ul class="list-disc pl-6">
-          <li>Feature 1: [Description of feature]</li>
-          <li>Feature 2: [Description of feature]</li>
-          <li>Feature 3: [Description of feature]</li>
-        </ul>
-        
-        <a href="https://github.com/yourusername/project3" target="_blank" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-full">View on GitHub</a>
-      </div>
-    </div>
-  </section>
+    <h1 class="text-4xl font-bold text-center mb-8">Project 5: Interactive To-Do List</h1>
+  
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left side for Images (2 per row) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Add 11 images here, adjust the size and layout -->
+            <a href="../assets/images/Work5/Image1.png" target="_blank" class="lightbox">
+              <img src="../assets/images/Work5/Image1.png" alt="Project Image 1" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+            </a>
+            <a href="../assets/images/Work5/Image2.png" target="_blank" class="lightbox">
+              <img src="../assets/images/Work5/Image2.png" alt="Project Image 2" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+            </a>
+            <a href="../assets/images/Work5/Image3.png" target="_blank" class="lightbox">
+              <img src="../assets/images/Work5/Image3.png" alt="Project Image 3" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+            </a>
+            <a href="../assets/images/Work5/Image4.png" target="_blank" class="lightbox">
+              <img src="../assets/images/Work5/Image4.png" alt="Project Image 4" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+            </a>
+            <a href="../assets/images/Work5/Image5.png" target="_blank" class="lightbox">
+              <img src="../assets/images/Work5/Image5.png" alt="Project Image 5" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+            </a>
+          </div>
+      
+          <!-- Right side for Text -->
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-[#0b0713]">Overview</h2>
+            <p class="text-lg mb-4 text-[#0b0713]">This project, TaskMaster, is a JavaScript-based web application designed to help users manage their tasks efficiently. It features an interactive to-do list with task input, due dates, and filtering options. The application emphasizes user-friendly task management by integrating dynamic UI elements and smooth interactions. The project showcases front-end development skills, particularly JavaScript DOM manipulation, event handling, and local storage implementation.</p>
+            
+            <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Technologies Used</h3>
+            <ul class="list-disc pl-6 text-[#0b0713]">
+              <li>HTML & CSS: Structures the page layout and provides a clean, visually appealing design.</li>
+              <li>JavaScript (DOM Manipulation): Handles real-time user interactions, such as adding, updating, and removing tasks.</li>
+              <li>Event Listeners & Functions: Enable smooth interactivity, responding to user inputs and task updates dynamically. </li>
+              <li>Local Storage: Allows users to store tasks persistently, ensuring data is retained across sessions.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Challenges</h3>
+            <p class="mb-4 text-[#0b0713]"> 
+              Implementing dynamic task management required efficient JavaScript DOM manipulation to handle real-time additions, deletions, and modifications of tasks. Ensuring a user-friendly interface was crucial, with clearly structured input fields, buttons, and alerts to enhance usability. Maintaining data persistence using local storage allowed tasks to be saved even after the page was refreshed. Additionally, achieving mobile responsiveness was essential, ensuring a seamless experience across different screen sizes through CSS media queries.</p>
+            
+            <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Key Features</h3>
+            <ul class="list-disc pl-6 text-[#0b0713]">
+              <li>Task Input & Due Dates – Users can add tasks with associated due dates for better organization. </li>
+              <li>Edit & Delete Tasks – Tasks can be modified or removed as needed.</li>
+              <li>Dynamic Filtering – Users can filter tasks based on due dates, categories, or completion status.</li>
+              <li>Persistent Storage – Tasks are saved using local storage, so they remain available even after the browser is closed.</li>
+            </ul>
+            
+            <a href="../assets/Zip/Cherednyk_Assignment8.zip" download class="work-button mt-6 inline-block px-4 py-3 bg-[#ffae03] text-[#0b0713] rounded-full">Download ZIP</a>
+  
+          </div>
+        </div>
+      </section>
 
   <footer>
     <div class="footer-container">
