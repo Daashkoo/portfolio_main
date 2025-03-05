@@ -1,93 +1,141 @@
 /* ----------------------- Base Colors ----------------------*/
 :root {
-    --color-primary: #c33149;    /* Rich Red */
-    --color-secondary: #a22522;  /* Dark Red */
-    --color-white: #ffffff;      /* White */
-    --color-yellow: #ffae03;     /* Vibrant Yellow */
-    --color-dark: #0b0713;       /* Deep Dark Purple */
-  }
-  
-  /* -------------------- General Body -----------------------*/
-  body {
-    background-color: var(--color-white);
-    color: var(--color-dark);
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Hover and Active States */
-  a:hover {
-    color: var(--color-yellow);
-  }
-  
-  a:focus {
-    color: var(--color-yellow);
-    outline: none;
-  }
-  
-  /* Page Title */
-  h1, h2, h3 {
-    color: var(--color-primary);
-  }
-  
-  h1 {
-    font-size: 3rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-  }
-  
-  /* Buttons */
-  button, .btn {
-    background-color: var(--color-yellow);
-    color: var(--color-dark);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover, .btn:hover {
-    background-color: var(--color-secondary);
-  }
-  
-  /* Container for Content */
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  /* Project Sections */
-  .project-section {
-    background-color: var(--color-white);
-    padding: 40px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-section img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Project Titles */
-  .project-section h2 {
-    color: var(--color-primary);
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Links in Project Section */
-  .project-section a {
-    color: var(--color-primary);
-  }
-  
-  .project-section a:hover {
-    color: var(--color-yellow);
-  }
-  
+  --color-primary: #c33149;    /* Rich Red */
+  --color-secondary: #a22522;  /* Dark Red */
+  --color-white: #ffffff;      /* White */
+  --color-yellow: #ffae03;     /* Vibrant Yellow */
+  --color-dark: #0b0713;       /* Deep Dark Purple */
+}
+
+/* -------------------- General Body -----------------------*/
+body {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  font-family: 'Arial', sans-serif;
+  font-size: 19px;  /* Ensures consistent font size for text */
+}
+
+/* Hover and Active States */
+a:hover {
+  color: var(--color-yellow);
+}
+
+a:focus {
+  color: var(--color-yellow);
+  outline: none;
+}
+
+/* Default State */
+.work-button {
+  background-color: #ffae03; /* Yellow background */
+  color: #0b0713; /* Dark text color */
+  padding: 12px 20px;
+  border-radius: 25px; /* Rounded edges for the button */
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  font-size: 1rem; /* Larger font size (16px) */
+}
+
+/* Hover effect */
+.work-button:hover {
+  background-color: #0b0713; /* Dark background */
+  color: #a22522; /* Red text color */
+}
+
+
+
+/* Page Title */
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Text inside li element */
+li {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;  /* Consistent font size for li elements */
+  color: var(--color-dark);
+}
+
+
+/* Container for Content */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Project Sections */
+.project-section {
+  background-color: var(--color-white);
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Project Titles */
+.project-section h2 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Links in Project Section */
+.project-section a {
+  color: var(--color-primary);
+}
+
+.project-section a:hover {
+  color: var(--color-yellow);
+}
+
+/* Adjust the image grid for 2 per row */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.md\\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Adjust the size of images for better visual appeal */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  cursor: pointer;
+}
+
+/* Optional: Adjust the gap between images */
+.grid {
+  gap: 16px; /* You can increase this value to adjust the space between images */
+}
+
+/* Lightbox images: Optional margin and styling */
+.lightbox {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+

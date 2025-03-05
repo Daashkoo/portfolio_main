@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 1 - Daria Shtefanesa</title>
+  <!-- SimpleLightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.js"></script>
+
   <script src="https://cdn.tailwindcss.com"></script> 
   <link href="../styles/styles.css" rel="stylesheet">
   <link href="../styles/tailwind.css" rel="stylesheet">
@@ -21,7 +25,6 @@
       <span class="text-4xl font-bold hover:text-[#a22522] transition duration-300">Daria Shtefanesa</span>
     </a>
 
-    <!-- Hamburger Menu Icon for Mobile -->
     <div class="block lg:hidden">
       <button id="hamburger" class="text-[#0b0713] focus:outline-none">
         <span class="block w-6 h-0.5 bg-[#0b0713] mb-1"></span>
@@ -30,16 +33,12 @@
       </button>
     </div>
 
-    <!-- Navbar Links (hidden on small screens) -->
     <div class="lg:flex space-x-6 hidden" id="navbar-links">
       <a href="../index.html" class="nav-link">Home</a>
       <a href="../Pages/about.html" class="nav-link">About</a>
 
-      <!-- Works Dropdown Menu -->
       <div class="relative group">
-        <a href="javascript:void(0)" class="nav-link works-link">Works</a><!-- Changed to an anchor tag for uniformity -->
-      
-      <!-- Dropdown Menu -->
+        <a href="javascript:void(0)" class="nav-link works-link">Works</a>
       <div class="absolute hidden group-hover:block bg-[#ffae03] text-[#0b0713] p-4 shadow-lg rounded-lg mt-2">
         <a href="../works/work1.html" class="block hover:text-[#a22522] mb-2">Work 1</a>
         <a href="../works/work2.html" class="block hover:text-[#a22522] mb-2">Work 2</a>
@@ -60,42 +59,76 @@
 </nav>
 </header>
 
+<section class="container mx-auto py-16">
+  <h1 class="text-4xl font-bold text-center mb-8">Project 1: Essential Oils E-Commerce Website</h1>
 
-  <!-- Project Details Section -->
-  <section class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center mb-8">Project 1: Essential Oils E-Commerce Website</h1>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <img src="/assets/images/work1-screenshot.jpg" alt="Project 1 Screenshot" class="w-full rounded-lg mb-4">
-      </div>
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Overview</h2>
-        <p class="text-lg mb-4">This project is an E-commerce website developed to sell essential oils online, offering a user-friendly interface for browsing, purchasing, and learning about various essential oils. The website focuses on product descriptions, customer reviews, and easy navigation to create a seamless shopping experience. It includes features like a discount offer for new customers, integration with a shopping cart, and a newsletter subscription for ongoing engagement.
-          The goal was to develop an interactive and visually appealing website that caters to health-conscious consumers interested in essential oils and their benefits..</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Technologies Used</h3>
-        <ul class="list-disc pl-6">
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, Node.js</li>
-          <li>MongoDB</li>
-        </ul>
-        
-        <h3 class="text-xl font-semibold mt-8">Challenges</h3>
-        <p class="mb-4">One of the key challenges in this project was [describe a challenge]. To overcome this, I [describe solution or approach taken].</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Key Features</h3>
-        <ul class="list-disc pl-6">
-          <li>Product Listings: Displaying various essential oils with detailed descriptions, prices, and images, allowing users to easily explore products.</li>
-          <li>Customer Reviews: Users can leave reviews on each product to boost trust and reliability.</li>
-          <li>Responsive Design: The website is mobile-friendly, ensuring it works seamlessly across all devices.</li>
-          <li>Visual Design: Clean layout with a minimalist approach and consistent branding to ensure ease of use and a pleasant user experience.</li>
-        </ul>
-        
-        <a href="https://github.com/yourusername/project1" target="_blank" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-full">View on GitHub</a>
-      </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left side for Images (2 per row) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Add 11 images here, adjust the size and layout -->
+      <a href="../assets/images/Work1/Picture1.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture1.png" alt="Project Image 1" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture2.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture2.png" alt="Project Image 2" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture3.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture3.png" alt="Project Image 3" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture4.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture4.png" alt="Project Image 4" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture5.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture5.png" alt="Project Image 5" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture6.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture6.png" alt="Project Image 6" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture7.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture7.png" alt="Project Image 7" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture8.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture8.png" alt="Project Image 8" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture9.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture9.png" alt="Project Image 9" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture10.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture10.png" alt="Project Image 10" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
+      <a href="../assets/images/Work1/Picture11.png" target="_blank" class="lightbox">
+        <img src="../assets/images/Work1/Picture11.png" alt="Project Image 11" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+      </a>
     </div>
-  </section>
+
+    <!-- Right side for Text -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 text-[#0b0713]">Overview</h2>
+      <p class="text-lg mb-4 text-[#0b0713]">This project is an E-commerce website developed to sell essential oils online, offering a user-friendly interface for browsing, purchasing, and learning about various essential oils. The website focuses on product descriptions, customer reviews, and easy navigation to create a seamless shopping experience. It includes features like a discount offer for new customers, integration with a shopping cart, and a newsletter subscription for ongoing engagement. The goal was to develop an interactive and visually appealing website that caters to health-conscious consumers interested in essential oils and their benefits..</p>
+      
+      <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Technologies Used</h3>
+      <ul class="list-disc pl-6 text-[#0b0713]">
+        <li>HTML, CSS, JavaScript: For building the structure, design, and interactivity of the site.</li>
+        <li>React, Node.js</li>
+        <li>Mailchimp Integration: To collect email addresses for the newsletter subscription and send out promotional material.</li>
+      </ul>
+      
+      <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Challenges</h3>
+      <p class="mb-4 text-[#0b0713]">One of the key challenges in this project was Mobile Optimization: Ensuring the website is fully responsive and works well on different screen sizes, from mobile phones to tablets and desktops. To overcome this, I implemented a mobile-first approach using CSS media queries to create responsive layouts. I ensured that images were flexible, navigation was optimized for touch devices with a hamburger menu, and fonts were scalable. Additionally, I tested the website across various devices to ensure a seamless user experience, optimizing performance by compressing images and minimizing code.</p>
+      
+      <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Key Features</h3>
+      <ul class="list-disc pl-6 text-[#0b0713]">
+        <li>Product Listings: Displaying various essential oils with detailed descriptions, prices, and images, allowing users to easily explore products.</li>
+        <li>Customer Reviews: Users can leave reviews on each product to boost trust and reliability.</li>
+        <li>Responsive Design: The website is mobile-friendly, ensuring it works seamlessly across all devices.</li>
+        <li>Visual Design: Clean layout with a minimalist approach and consistent branding to ensure ease of use and a pleasant user experience.</li>
+        <li>Product Filtering: Search and filter products based on categories like "Lavender Oil," "Peppermint Oil," etc.</li>
+      </ul>
+      
+      <a href="https://advertising959.wordpress.com" class="work-button mt-6 inline-block px-4 py-3 bg-[#ffae03] text-[#0b0713] rounded-full">View on WordPress</a>
+    </div>
+  </div>
+</section>
 
   <footer>
     <div class="footer-container">
@@ -135,5 +168,9 @@
   </footer>
 
   <script src="../styles/main.js"></script>
+  <script>
+    var lightbox = new SimpleLightbox('.lightbox');
+  </script>
+  
 </body>
 </html>
