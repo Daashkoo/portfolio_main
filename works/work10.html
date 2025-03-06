@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 10 - Daria Shtefanesa</title>
+  <link href="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.3.0/dist/simple-lightbox.min.js"></script>
+
   <script src="https://cdn.tailwindcss.com"></script> 
   <link href="../styles/styles.css" rel="stylesheet">
   <link href="../styles/tailwind.css" rel="stylesheet">
@@ -61,37 +64,48 @@
 
   <!-- Project Details Section -->
   <section class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center mb-8">Project 10: Daria Shtefanesa</h1>
+    <h1 class="text-4xl font-bold text-center mb-8">Project 10: Style Guide & UI Sketch </h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <img src="/assets/images/work3-screenshot.jpg" alt="Project 3 Screenshot" class="w-full rounded-lg mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left side for Images (2 per row) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Add 11 images here, adjust the size and layout -->
+          <a href="../assets/images/Work10/Image1.png" target="_blank" class="lightbox">
+            <img src="../assets/images/Work10/Image1.png" alt="Project Image 1" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+          </a>
+          <a href="../assets/images/Work10/Image2.png" target="_blank" class="lightbox">
+            <img src="../assets/images/Work10/Image2.png" alt="Project Image 2" class="w-full h-auto rounded-lg transition-transform transform hover:scale-105">
+          </a>
+        </div>
+    
+        <!-- Right side for Text -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4 text-[#0b0713]">Overview</h2>
+          <p class="text-lg mb-4 text-[#0b0713]">A style guide and UI sketch for an interior design website, focusing on a vibrant aesthetic, accessibility, and intuitive navigation. Designed entirely using Adobe Photoshop, Illustrator, and XD, with all elements hand-drawn.</p>
+          
+          <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Technologies Used</h3>
+          <ul class="list-disc pl-6 text-[#0b0713]">
+            <li>Adobe Photoshop, Illustrator, XD: Designed all UI elements, typography, icons, and layout. Every component was hand-drawn and customized for the project.</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Challenges</h3>
+          <p class="mb-4 text-[#0b0713]"> 
+            Ensuring readability, consistency, and cohesion while using a vibrant palette was key. To overcome contrast issues, I carefully paired colors, tested legibility, and used bold typography for clarity.</p>
+          
+          <h3 class="text-xl font-semibold mt-8 text-[#0b0713]">Key Features</h3>
+          <ul class="list-disc pl-6 text-[#0b0713]">
+            <li>Color Palette & Typography: A carefully selected mix of pastel and bold tones, paired with legible and stylish fonts.</li>
+            <li>Custom social media, navigation, and listing icons to improve user interaction.</li>
+            <li>Helper Features: Breadcrumbs, pagination, pop-ups, mini-navigation. </li>
+            <li>Interactive Elements: Buttons, forms, checkboxes, progress bars, alerts.</li>
+            <li>Accessibility Focus: High contrast, clear hover states, structured navigation.</li>
+          </ul>
+          
+          <a href="https://dariacherednyk.myportfolio.com/scketches" target="_blank" class="work-button mt-6 inline-block px-4 py-3 bg-[#ffae03] text-[#0b0713] rounded-full">View online</a>
+  
+        </div>
       </div>
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Overview</h2>
-        <p class="text-lg mb-4">This project is a [brief project description]. It was developed using [technologies/tools used], and it solves [problem]. The main goal was to [primary objective of the project].</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Technologies Used</h3>
-        <ul class="list-disc pl-6">
-          <li>HTML, CSS, JavaScript</li>
-          <li>Angular, Firebase</li>
-          <li>GraphQL</li>
-        </ul>
-        
-        <h3 class="text-xl font-semibold mt-8">Challenges</h3>
-        <p class="mb-4">A key challenge was [describe a challenge]. I overcame this by [describe solution].</p>
-        
-        <h3 class="text-xl font-semibold mt-8">Key Features</h3>
-        <ul class="list-disc pl-6">
-          <li>Feature 1: [Description of feature]</li>
-          <li>Feature 2: [Description of feature]</li>
-          <li>Feature 3: [Description of feature]</li>
-        </ul>
-        
-        <a href="https://github.com/yourusername/project3" target="_blank" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-full">View on GitHub</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <footer>
     <div class="footer-container">
@@ -112,7 +126,7 @@
       <div class="footer-contact">
         <div class="footer-address">
           <i class="fas fa-map-marker-alt"></i>
-          <p>123 Social Ave, Suite 456, City, Country</p>
+          <p>Enola, Pennsylvania, USA</p>
         </div>
         <div class="footer-phone">
           <i class="fas fa-phone-alt"></i>
