@@ -63,18 +63,23 @@
   <section class="container mx-auto py-16">
     <h1 class="text-4xl font-bold text-center mb-8">Contact Me</h1>
 
-    <form action="/submit-form" method="POST" class="max-w-lg mx-auto">
+    <form action="https://formsubmit.co/winterdria@gmail.com" method="POST" class="max-w-lg mx-auto">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you">
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="hidden" name="_captcha" value="false">
+    
       <label for="name" class="block text-lg font-medium mb-2">Name</label>
       <input type="text" id="name" name="name" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
-
+    
       <label for="email" class="block text-lg font-medium mb-2">Email</label>
       <input type="email" id="email" name="email" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
-
+    
       <label for="message" class="block text-lg font-medium mb-2">Message</label>
       <textarea id="message" name="message" class="w-full p-3 mb-4 border border-gray-300 rounded" rows="4" required></textarea>
-
-      <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-full">Send Message</button>
+    
+      <button type="submit" class="px-5 py-3 bg-[#ffae03] text-[#0b0713] rounded-full">Send Message</button>
     </form>
+    
 
     <div class="mt-8 text-center">
       <h3 class="text-xl font-bold">You can also find me on:</h3>
